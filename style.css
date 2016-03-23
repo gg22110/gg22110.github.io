@@ -1,0 +1,68 @@
+imgh1 {
+  color:deeppink;
+  font-size:90px;
+}
+
+p{
+  color:deeppink;
+ 
+}
+body{
+  color:white;
+  background-image:url("http://blog.nekoflies.com/wp-content/uploads/2014/01/funny-cat.jpg");
+  background-size:500px;
+  max-width:800px;
+  margin:200px auto;
+  font-size: 20px;
+
+}
+img{
+  height:200px;
+  width:350px;
+}
+
+  
+}
+h2{
+  color:lightpink;
+  font-size:55px;
+}
+
+  
+}
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+h3{
+  color:blue;
+}
+h4{
+  color:blue;
+}
+ul{
+  color:lightblue;
+}
+ol{
+  color:lightblue;
+}
+
+.catss{
+  float: left;
+}
