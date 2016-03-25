@@ -102,6 +102,7 @@
 
 		.container.\32 5\25 {
 			width: 300px;
+
 		}
 
 		.container {
@@ -1264,7 +1265,7 @@
 				background-image: -webkit-linear-gradient(top, #008dab, #007294);
 				background-image: -ms-linear-gradient(top, #008dab, #007294);
 				background-image: linear-gradient(top, #008dab, #007294);
-				background-color: #007294;
+				background-color: red;
 			}
 
 			#header {
