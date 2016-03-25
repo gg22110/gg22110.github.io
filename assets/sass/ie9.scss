@@ -1,42 +1,52 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import "libs/skel";
+@import 'libs/skel';
 
 /*
-	Minimaxing by HTML5 UP
+	Phantom by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Reusable */
+/* Tiles */
 
-	.button {
-		background-image: url('images/ie/button.svg');
+	.tiles {
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
 
-		&:hover {
-			background-image: url('images/ie/button-hover.svg');
+		article {
+			float: left;
+
+			> a {
+				padding-top: 50%;
+				margin-top: -1.75em;
+			}
+
+			body:not(.is-touch) & {
+				&:hover {
+					> .image {
+						@include vendor('transform', 'none');
+					}
+				}
+			}
 		}
 	}
 
-/* Header */
+/* Footer */
 
-	#header-wrapper {
-		background-image: url('images/ie/header-wrapper.svg');
-	}
+	#footer {
+		> .inner {
+			section {
+				float: left;
+			}
 
-	#header {
-		background-image: url('images/ie/header.svg');
-
-		nav {
-			a {
-				&.current-page-item {
-					background-image: url('images/ie/nav-a.svg');
-				}
-
-				&:hover {
-					background-image: url('images/ie/nav-a-hover.svg');
-				}
+			.copyright {
+				clear: both;
+				padding-top: (_size(element-margin) * 2);
 			}
 		}
 	}
